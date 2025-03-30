@@ -137,6 +137,7 @@ public class Car_Controller : MonoBehaviour
     private float Brakes = 0f; //Brakes
     private WheelFrictionCurve  Wheel_forwardFriction, Wheel_sidewaysFriction; //Wheel friction curve(s)
     private float Next_Boost_Time; //Next boost time
+    private bool crashedState = false; // State in which we have crashed
 
     //Private Audio Variables
     private float pitch; //Pitch
@@ -331,6 +332,13 @@ public class Car_Controller : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //Restart the current scene
             }
         }
+        
+        // Check driver input to see if we stay in crashed state
+        if (crashedState && (Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f))
+        {
+            // If we are reversing or driving, then disable
+            crashedState = false;
+        }
 
         //Rotating The Wheels Meshes so they have the same position and rotation as the wheel colliders
         var pos = Vector3.zero; //position value (temporary)
@@ -351,7 +359,7 @@ public class Car_Controller : MonoBehaviour
         }
 
         //Make Car Brake
-        if((Input.GetKey(KeyCode.Space) && Car_Started) || automaticBrake)
+        if((Input.GetKey(KeyCode.Space) && Car_Started) || automaticBrake || crashedState)
         {
             BrakeCar();
         }
@@ -404,6 +412,14 @@ public class Car_Controller : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision col){
+        // Our changes, if the object is an obstacle, apply brake on crash
+        if (col.gameObject.GetComponent<Obstacle>() != null)
+        {
+            crashedState = true;
+            automaticBrake = true;
+            BrakeCar();
+        }
+        
         //Play the crash sound when car crashes into an object with the tag in the "Crash_Object_Tags" list
         if(Enable_Crash_Noise && Enable_Audio){
             foreach (string tag in Crash_Object_Tags){

@@ -26,7 +26,15 @@ public class CamSwitcher : MonoBehaviour
             // turn on all cameras in list
             foreach (Camera cam in cameras)
             {
-                cam.enabled = true;
+                if (cam.tag != "Malfunction")
+                {
+                    cam.enabled = true;
+                }
+                else
+                {
+                    cam.enabled = false;
+                }
+                
             }
         } 
         

@@ -1,10 +1,21 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BirdView : MonoBehaviour
 {
     [Header("Objects Settings")]
     public Transform Target; //Target (the car)
     public int Height; //How high the camera is
+
+    [Header("Button Controller Settings")] 
+    public Button button;
+
+    private Image buttonImage;
+    public TextMeshProUGUI buttonText;
+
+    public Color enabledColor = Color.green;
+    public Color disabledColor = Color.red;
     
     void Start()
     {
@@ -14,6 +25,11 @@ public class BirdView : MonoBehaviour
         transform.position = targetPosition;
         // Add vertical offset
         transform.position += new Vector3(0, Height, 0);
+        
+        // Set button params
+        buttonImage = button.GetComponent<Image>();
+        buttonText.text = "BirdView is functional";
+        buttonImage.color = enabledColor;
     }
 
     // Update is called once per frame
@@ -24,5 +40,24 @@ public class BirdView : MonoBehaviour
         // Update the position as well
         transform.position = Target.position;
         transform.position += new Vector3(0, Height, 0);
+    }
+    
+    // Disable/Enable on button press
+    public void SetCameraState()
+    {
+        Camera cam = GetComponent<Camera>();
+        
+        if (cam.tag == "Malfunction")
+        {
+            buttonImage.color = enabledColor;
+            cam.tag = "Untagged";
+            buttonText.text = "BirdView is functional";
+        }
+        else
+        {
+            buttonText.text = "BirdView is malfunctioning";
+            cam.tag = "Malfunction";
+            buttonImage.color = disabledColor;
+        }
     }
 }

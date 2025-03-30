@@ -50,7 +50,6 @@ public class HighlightController : MonoBehaviour
     void Update()
     {
         bool inReverse = gearbox.is_reversing;
-        Debug.Log(inReverse);
         bool brakeTriggered = false;
         bool alertTriggered = false;
         

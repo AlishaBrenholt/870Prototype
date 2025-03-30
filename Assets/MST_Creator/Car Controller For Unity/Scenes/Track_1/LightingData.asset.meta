@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9606f4de43880eb4d979cbd69419358d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202269
+  packageName: Car Controller
+  packageVersion: 1.2
+  assetPath: Assets/MST_Creator/Car Controller For Unity/Scenes/Track_1/LightingData.asset
+  uploadId: 464921

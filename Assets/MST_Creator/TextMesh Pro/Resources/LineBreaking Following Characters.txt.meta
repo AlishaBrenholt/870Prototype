@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fade42e8bc714b018fac513c043d323b
+timeCreated: 1425440388
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202269
+  packageName: Car Controller
+  packageVersion: 1.2
+  assetPath: Assets/MST_Creator/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+  uploadId: 464921

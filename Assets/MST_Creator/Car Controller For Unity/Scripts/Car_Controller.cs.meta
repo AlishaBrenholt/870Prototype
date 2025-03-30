@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 504066bd11f3fa8419e01953b914e580
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202269
+  packageName: Car Controller
+  packageVersion: 1.2
+  assetPath: Assets/MST_Creator/Car Controller For Unity/Scripts/Car_Controller.cs
+  uploadId: 464921

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a25e88adae33dce4f8d08e8217d22b5a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202269
+  packageName: Car Controller
+  packageVersion: 1.2
+  assetPath: Assets/MST_Creator/Car Controller For Unity/Scenes/Track_2/Track_2/OcclusionCullingData.asset
+  uploadId: 464921

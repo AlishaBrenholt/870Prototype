@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be2cd646139bff044b255b35a18bbb1c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202269
+  packageName: Car Controller
+  packageVersion: 1.2
+  assetPath: Assets/MST_Creator/Car Controller For Unity/Texturess/Textures/Layers/Grass_Layer.terrainlayer
+  uploadId: 464921

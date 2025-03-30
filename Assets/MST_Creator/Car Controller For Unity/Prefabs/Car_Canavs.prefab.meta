@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cb02b5821edba5844ba688e0355d0faf
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202269
+  packageName: Car Controller
+  packageVersion: 1.2
+  assetPath: Assets/MST_Creator/Car Controller For Unity/Prefabs/Car_Canavs.prefab
+  uploadId: 464921

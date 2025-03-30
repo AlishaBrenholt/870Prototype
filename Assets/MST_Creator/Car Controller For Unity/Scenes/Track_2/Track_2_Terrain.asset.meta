@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e326d08ba7783df40a7fb7324d91f755
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202269
+  packageName: Car Controller
+  packageVersion: 1.2
+  assetPath: Assets/MST_Creator/Car Controller For Unity/Scenes/Track_2/Track_2_Terrain.asset
+  uploadId: 464921

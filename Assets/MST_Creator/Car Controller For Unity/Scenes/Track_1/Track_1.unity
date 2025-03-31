@@ -2499,12 +2499,17 @@ PrefabInstance:
     - target: {fileID: 7186061580063621754, guid: 699a0248b4036f64c88fd59f77bc7239,
         type: 3}
       propertyPath: enable_boost
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7186061580063621754, guid: 699a0248b4036f64c88fd59f77bc7239,
         type: 3}
       propertyPath: Boost_KeyCode
       value: 304
+      objectReference: {fileID: 0}
+    - target: {fileID: 7186061580063621754, guid: 699a0248b4036f64c88fd59f77bc7239,
+        type: 3}
+      propertyPath: Maximum_Speed
+      value: 9.9
       objectReference: {fileID: 0}
     - target: {fileID: 7186061580063621754, guid: 699a0248b4036f64c88fd59f77bc7239,
         type: 3}

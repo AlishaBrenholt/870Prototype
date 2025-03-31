@@ -2161,12 +2161,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2ab50f1d0bcb4573b535a98b4400b7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warningDistance: 16
-  strongWarningDistance: 8
-  alertWarningDistance: 4.05
+  warningDistance: 8
+  strongWarningDistance: 5
+  alertWarningDistance: 8
   colorSixFeet: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   colorThreeFeet: {r: 1, g: 0, b: 0, a: 1}
-  brakeDistance: 3.06
+  brakeDistance: 3
   brakeFraction: -0.05
   enableAlertSound: 1
   alertSound: {fileID: 4524786786330324548}
@@ -2184,7 +2184,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 5162d46bbe53a49dbbcb033ca50e95c4, type: 3}
   m_Resource: {fileID: 8300000, guid: 5162d46bbe53a49dbbcb033ca50e95c4, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.581
   m_Pitch: 1
   Loop: 1
   Mute: 0
